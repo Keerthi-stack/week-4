@@ -1,0 +1,39 @@
+const originalItem = document.querySelector("ul li");
+const clonedItem = originalItem.cloneNode(true);
+document.querySelector("ul").appendChild(clonedItem);
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple DOM Manipulation</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="main-title">DOM Manipulation Example</h1>
+    <p class="text">First paragraph.</p>
+    <p class="text">Second paragraph.</p>
+    <ul id="item-list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <button id="toggle-button">Toggle Class</button>
+    <form id="example-form">
+        <input type="text" placeholder="Name" id="name-input">
+        <input type="email" placeholder="Email" id="email-input">
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+    const originalItem = document.querySelector("ul li");
+const clonedItem = originalItem.cloneNode(true);
+document.querySelector("ul").appendChild(clonedItem);
+        createAndRemoveParagraph();
+    </script>
+</body>
+</html>
